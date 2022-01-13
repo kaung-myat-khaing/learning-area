@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 3</title>
+    <title>Functions: Task 4</title>
     <style>
       p {
         color: purple;
@@ -26,23 +26,21 @@
 
   </body>
   <script>
-    // Add your code here
+    const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada'];
+    const para = document.createElement('p');
 
-    const myName = 'Default';
-    myName = 'Chris';
+    function isShort(name) {
+      return name.length < 5;
+    }
 
-    let myAge = '42';
+    const shortNames = names.filter(isShort);
+    para.textContent = shortNames;
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
-    const para1 = document.createElement('p');
-    const para2 = document.createElement('p');
-    para1.textContent = myName;
-    para2.textContent = `In 20 years, I will be ${myAge + 20}`;
-    section.appendChild(para1);
-    section.appendChild(para2);
+    section.appendChild(para);
   </script>
 
 </html>

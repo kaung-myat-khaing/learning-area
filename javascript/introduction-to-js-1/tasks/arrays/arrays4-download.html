@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Variables: Task 3</title>
+    <title>Arrays: Task 4</title>
     <style>
       p {
         color: purple;
@@ -26,23 +26,18 @@
 
   </body>
   <script>
+    const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
+
     // Add your code here
-
-    const myName = 'Default';
-    myName = 'Chris';
-
-    let myAge = '42';
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
     const para1 = document.createElement('p');
-    const para2 = document.createElement('p');
-    para1.textContent = myName;
-    para2.textContent = `In 20 years, I will be ${myAge + 20}`;
+    para1.textContent = eBirds;
+
     section.appendChild(para1);
-    section.appendChild(para2);
   </script>
 
 </html>
